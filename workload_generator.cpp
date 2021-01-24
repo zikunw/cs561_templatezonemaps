@@ -143,7 +143,7 @@ int main(int argc, char **argv)
     }
     if (lPercentage < 0 || lPercentage > 50)
     {
-        std::cout << "Please ensure 0 <= noisePercentage <= 50" << std::endl;
+        std::cout << "Please ensure 0 <= lPercentage <= 50" << std::endl;
         exit(1);
     }
 
