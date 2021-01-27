@@ -40,6 +40,17 @@ queries and range queries are to be timed for evaluating performance. The execut
 or displayed onto the terminal along with 
 other relevant details about the workload, such as: domain size, noise percentage, window threshold, etc. 
 
+There are currently 4 test cases pre-configured in main.cpp, as per the assignment request. Once the implementation of zone maps is 
+complete, you will be required to fill in the appropriate test call in the main.cpp file for the point/range queries. To run a specific test case, 
+use the command: 
+```c
+./main <input_file> <test_case>
+```
+For example, to run point queries on an input file:
+```c
+./main ./data_1000000-elems_0-kperct_5-lperct_1seed1611707662.dat test_pq
+```
+
 ## Contact
 
 If you have any questions please feel free to see Aneesh in office hours, or
