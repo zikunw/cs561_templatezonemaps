@@ -14,7 +14,7 @@ void generate_one_file(unsigned long long pTOTAL_NUMBERS, unsigned int pdomain, 
     srand(time(NULL));
     outfile.open("dataledger.txt", std::ios_base::app);
 
-    std::string folder_name = "input/";
+    std::string folder_name = "./";
     outfile << generate_partitions_stream(pTOTAL_NUMBERS, pdomain, pL, ppercent_outRange, plpercentage, pseed, folder_name) << std::endl;
 
     outfile.close();
@@ -116,7 +116,7 @@ std::string generate_partitions_stream(unsigned long long TOTAL_NUMBERS, unsigne
 
 int main(int argc, char **argv)
 {
-    if (argc < 3)
+    if (argc < 4)
     {
         std::cout << "Usage: ./execs/workload_generator.exe totalNumbers noisePercentage lPercentageThreshold" << std::endl;
         return 0;
