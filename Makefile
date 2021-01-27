@@ -1,6 +1,6 @@
 all: main workloadgenerator
 
-main: main.cpp
+main: main.cpp zonemaps.cpp 
 	g++ -g -std=c++11 -o $@ $^
 
 workloadgenerator: workload_generator.cpp

@@ -7,6 +7,7 @@
 #include <functional>
 #include <chrono>
 #include "zonemaps.h"
+#include "zonemaps.cpp"
 
 using namespace std;
 
@@ -60,6 +61,7 @@ int main(int argc, char **argv)
 
   //1. ----------------------------- initialize zonemap and build -----------------------------
   //build zonemap 
+  zonemap<int> zones(data, (uint)data.size()/100);
 
 
   //2. ----------------------------- point queries -----------------------------

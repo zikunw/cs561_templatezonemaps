@@ -1,3 +1,5 @@
+#ifndef ZONEMAPS_H
+#define ZONEMAPS_H
 #include <iostream>
 #include <vector>
 #include <unordered_map>
@@ -56,3 +58,4 @@ public:
      */
     std::vector<T> query(T low, T high);
 };
+#endif
