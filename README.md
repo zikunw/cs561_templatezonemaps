@@ -11,10 +11,18 @@ scratch. You may require additional helper functions to satisfy the requirements
 
 ## Generating Workloads
 You will be asked to generate workloads of a specific size, with varying noise levels. A workload generator
-is provided as part of the API that performs the required functionality. Compile the workload generator using 
+is provided as part of the API that performs the required functionality. Here, noise (%) is the percentage (int) 
+of out of order elements, and windowThreshold(%) is the window (as percentage of total elements) within which an
+out of order element can be placed from its original location. So, a 5% noise and 5% window threshold means 
+5% of the total domain size of elements will be out-of-order and each of these out-of-order elements will be 
+placed within a 5% window from its original (sorted) location. Compile the workload generator using 
 the "make" command, and execute using
 ```c
 ./workloadgenerator <domain_size> <noise_percentage> <windowThreshold>
+```
+For example, to generate a workload of 1 Million integers with 5% noise and 5% windowThreshold, use: 
+```c
+./workloadgenerator 1000000 0 5
 ```
 
 ## Zone Map Header
