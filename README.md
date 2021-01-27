@@ -40,6 +40,7 @@ queries and range queries are to be timed for evaluating performance. The execut
 or displayed onto the terminal along with 
 other relevant details about the workload, such as: domain size, noise percentage, window threshold, etc. 
 
+Compile all files using the "make" command. 
 There are currently 4 test cases pre-configured in main.cpp, as per the assignment request. Once the implementation of zone maps is 
 complete, you will be required to fill in the appropriate test call in the main.cpp file for the point/range queries. To run a specific test case, 
 use the command: 
