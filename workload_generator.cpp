@@ -118,7 +118,7 @@ int main(int argc, char **argv)
 {
     if (argc < 4)
     {
-        std::cout << "Usage: ./execs/workload_generator.exe totalNumbers noisePercentage lPercentageThreshold" << std::endl;
+        std::cout << "Usage: ./execs/workload_generator.exe totalNumbers noisePercentage windowThreshold" << std::endl;
         return 0;
     }
 
