@@ -28,7 +28,8 @@ design decisions and logic.
 The main.cpp file provides a foundational testing framework expected for this project. You are required to generate the 
 workloads, read the data and build the zone map, perform point queries and range queries. For point queries, use the simple 
 query generator function inside the main.cpp file. Refer to the assignment instruction document for range queries. Both point 
-queries and range queries are to be timed for evaluating performance. The execution times are to be written in a log file along with 
+queries and range queries are to be timed for evaluating performance. The execution times are to be written either into a log file
+or displayed onto the terminal along with 
 other relevant details about the workload, such as: domain size, noise percentage, window threshold, etc. 
 
 ## Contact
