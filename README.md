@@ -20,7 +20,7 @@ the "make" command, and execute using
 ```c
 ./workloadgenerator <domain_size> <noise_percentage> <windowThreshold>
 ```
-For example, to generate a workload of 1 Million integers with 5% noise and 5% windowThreshold, use: 
+For example, to generate a workload of 1 Million integers with 0% noise and 5% windowThreshold, use: 
 ```c
 ./workloadgenerator 1000000 0 5
 ```
