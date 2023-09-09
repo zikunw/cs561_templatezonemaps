@@ -45,6 +45,12 @@ int main(int argc, char **argv)
   cout << "query(11): " << zm.query(11) << endl;
   cout << "query(0): " << zm.query(0) << endl;
   cout << "query(1): " << zm.query(1) << endl;
+  vector<int> queryResult = zm.query(4, 8);
+  cout << "query(4, 8): [";
+  for (auto e : queryResult) {
+    cout << e << ", ";
+  }
+  cout << "]" << endl;
   
   // if (argc < 3)
   // {

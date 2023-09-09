@@ -58,6 +58,25 @@ bool zonemap<T>::query(T key)
     return false;
 }
 
+
+template<typename T>
+std::vector<T> zonemap<T>::query(T low, T high) {
+    std::vector<T> queryResult;
+
+    for (auto const &z : this->zones) {
+        if (!(low > z.max) || !(high < z.min)) {
+            for (auto e : z.elements) {
+                if (e >= low && e <= high) {
+                    queryResult.push_back(e);
+                }
+            }
+        }
+    }
+
+    return queryResult;
+}
+
+
 // for debugging purpose
 template<typename T>
 void zonemap<T>::print()
