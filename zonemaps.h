@@ -57,5 +57,9 @@ public:
      * returns: list of elements found using the query 
      */
     std::vector<T> query(T low, T high);
+
+
+    // Debug
+    void print();
 };
 #endif
