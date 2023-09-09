@@ -39,8 +39,12 @@ std::vector<int> generatePointQueries(std::vector<int> data, int n)
 int main(int argc, char **argv)
 {
   cout << "start the zonemap" << endl;
-  vector<int> data{1,2,3,4,5,6,7,8,9,10};
+  vector<int> data{1,2,3,4,5,6,7,8,9};
   zonemap<int> zm(data, 3);
+  cout << "query(5):" << zm.query(5) << endl;
+  cout << "query(11): " << zm.query(11) << endl;
+  cout << "query(0): " << zm.query(0) << endl;
+  cout << "query(1): " << zm.query(1) << endl;
   
   // if (argc < 3)
   // {

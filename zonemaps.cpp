@@ -7,7 +7,7 @@ zonemap<T>::zonemap(std::vector<T> _elements, uint _num_elements_per_zone)
     // constructor
     elements = _elements;
     num_elements_per_zone = _num_elements_per_zone;
-    num_zones = elements.size() / num_elements_per_zone + 1;
+    num_zones = std::ceil(elements.size() / num_elements_per_zone) ;
 
     this->build();
     this->print();
@@ -44,6 +44,17 @@ void zonemap<T>::build()
 template<typename T>
 bool zonemap<T>::query(T key)
 {
+    // Try to find zone that include the key
+    for (auto const &z : this->zones) {
+        if (key >= z.min && key <= z.max) {
+            // scan within the block
+            for (auto &e : z.elements){
+                if (e == key) {
+                    return true;
+                }
+            }
+        }
+    }
     return false;
 }
 
