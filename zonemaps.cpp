@@ -10,7 +10,7 @@ zonemap<T>::zonemap(std::vector<T> _elements, uint _num_elements_per_zone)
     num_zones = std::ceil(elements.size() / num_elements_per_zone) ;
 
     this->build();
-    this->print();
+    //this->print();
 }
 
 template<typename T>
